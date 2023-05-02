@@ -1,66 +1,111 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
-  <meta name="Permissions-Policy" content="interest-cohort=()">
+
+  	  <meta name="Permissions-Policy" content="interest-cohort=()">
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Aspect Ratios</title>
+
     <style>
+
       html, body {
+
         margin: 0;
+
         padding: 0;
+
         height: 100%;
+
         background-color: #fff;
+
       }
 
       #container {
+
         height: 100%;
+
         display: flex;
+
         justify-content: center;
+
         align-items: center;
+
       }
 
       #ratio-container {
+
         display: flex;
+
         flex-wrap: wrap;
+
         max-width: 800px;
+
       }
 
       .ratio-item {
+
         width: 25%;
+
         padding: 20px;
+
         box-sizing: border-box;
+
       }
 
       .ratio-example {
+
         background-color: #fff;
+
         border: 1px solid #000;
+
         box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+
       }
 
       .ratio-info {
+
         margin-top: 10px;
+
         text-align: center;
+
       }
 
       .ratio-info h3 {
+
         margin: 0;
+
       }
 
       .ratio-info p {
+
         margin: 0;
+
         font-size: 14px;
+
       }
+
     </style>
+
   </head>
+
   <body>
-    <div id="container">
-      <div id="ratio-container">
-        <!-- Ratios will be generated dynamically here -->
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <div id="ratio-container"></div>
+
+    <!-- Add the jQuery library -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Add your script.js file -->
+
     <script src="script.js"></script>
+
   </body>
+
 </html>
